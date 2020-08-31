@@ -12,7 +12,7 @@ function wrapAdjective(deco = "*") {
   };
 }
 
-//Calculator labs
+//Calculator functions
 const Calculator = {};
 
 Calculator.add = function (a, b) {
@@ -31,7 +31,7 @@ Calculator.divide = function (a, b) {
   return a / b;
 };
 
-// actionApplyer function labs
+// actionApplyer function
 function actionApplyer(int, funcList) {
   for (const func of funcList) {
     int = func(int);
