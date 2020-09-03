@@ -21,19 +21,16 @@ let Calculator = {
 }
 
 const actionApplyer = (integer, array) => {
-    // if(array.length === 0){
-    //     return integer
-    // } 
-    // else {
-        // let result = integer
-        // for(const element of array){
-        //     element(result)
-        // };
-        // return result
+
+    // let result = integer
+    // for( let i = 0; i < array.length; i++){
+    //     result = array[i](result)
     // }
-    let result = integer
-    for( let i = 0; i < array.length; i++){
-        result = array[i](result)
-    }
+    // return result
+
+    array.map(element => {
+        let result = integer
+        result = element(result)
+    })
     return result
 }
