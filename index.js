@@ -28,8 +28,8 @@ const actionApplyer = (integer, array) => {
     // }
     // return result
 
+    let result = integer
     array.map(element => {
-        let result = integer
         result = element(result)
     })
     return result
